@@ -1,0 +1,107 @@
+{
+  "title": "GovernDiff Codex environment research metadata",
+  "version": "1.0.0",
+  "verified_at": "2026-07-18",
+  "classification": {
+    "official_openai": [
+      {
+        "title": "Running Codex safely at OpenAI",
+        "url": "https://openai.com/index/running-codex-safely/",
+        "used_for": [
+          "sandbox and approval separation",
+          "network boundaries",
+          "telemetry"
+        ]
+      },
+      {
+        "title": "Building a safe, effective sandbox to enable Codex on Windows",
+        "url": "https://openai.com/index/building-codex-windows-sandbox/",
+        "used_for": [
+          "Windows restricted users",
+          "ACL and firewall enforcement",
+          "human elevated setup"
+        ]
+      },
+      {
+        "title": "Harness engineering: leveraging Codex in an agent-first world",
+        "url": "https://openai.com/index/harness-engineering/",
+        "used_for": [
+          "short AGENTS map",
+          "structured docs system of record"
+        ]
+      },
+      {
+        "title": "GPT-5.6 in ChatGPT",
+        "url": "https://help.openai.com/en/articles/20001354",
+        "used_for": [
+          "Codex CLI minimum version"
+        ]
+      }
+    ],
+    "official_repository_reports": [
+      {
+        "issue": 24214,
+        "url": "https://github.com/openai/codex/issues/24214",
+        "status": "open user report",
+        "used_for": [
+          "no add-dir as narrow fence",
+          "exact cd root"
+        ]
+      },
+      {
+        "issue": 14487,
+        "url": "https://github.com/openai/codex/issues/14487",
+        "status": "open user report; sandbox mode disputed",
+        "used_for": [
+          "fail closed deletion controls"
+        ]
+      },
+      {
+        "issue": 12277,
+        "url": "https://github.com/openai/codex/issues/12277",
+        "status": "closed user report; reporter stated no sandbox/full access",
+        "used_for": [
+          "never unsandboxed",
+          "unexpected change stop"
+        ]
+      },
+      {
+        "issue": 15423,
+        "url": "https://github.com/openai/codex/issues/15423",
+        "status": "closed user report",
+        "used_for": [
+          "transparent PowerShell",
+          "do not weaken Defender"
+        ]
+      }
+    ],
+    "package_metadata": [
+      {
+        "package": "@openai/codex",
+        "reviewed_version": "0.144.1",
+        "source": "https://www.npmjs.com/package/@openai/codex"
+      },
+      {
+        "package": "next",
+        "reviewed_version": "16.2.10",
+        "source": "https://www.npmjs.com/package/next"
+      },
+      {
+        "package": "openai",
+        "reviewed_version": "6.47.0",
+        "source": "https://www.npmjs.com/package/openai"
+      },
+      {
+        "runtime": "Node.js",
+        "reviewed_version": "24.18.0 LTS",
+        "source": "https://nodejs.org/en/blog/release/v24.18.0"
+      }
+    ]
+  },
+  "caveats": [
+    "Issue reports are threat evidence, not verified platform-wide incident statistics.",
+    "AGENTS.md is not an OS security boundary.",
+    "Package versions require one human registry/license review at bootstrap.",
+    "Effective sandbox state must be verified in each write session."
+  ]
+}

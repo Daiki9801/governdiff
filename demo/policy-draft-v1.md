@@ -1,0 +1,21 @@
+# Mavrenna Field Systems Global Expense Review Policy
+
+**Display version:** v1  
+**Release version:** 1.0.0  
+**Effective from:** 2026-07-01  
+**Application mode:** Prospective only  
+**Organization:** Mavrenna Field Systems — fictional demonstration company  
+**Jurisdiction:** None  
+**Production use:** Prohibited
+
+Every expense must include an expense date, business purpose, department code, and project code.
+
+Expenses of USD 100.00 or more must include a receipt.
+
+Unusually high lodging expenses require manager review.
+
+Expenses incurred on a Saturday or Sunday require a written business justification.
+
+Missing or ambiguous information must be returned for clarification. The system must not automatically approve, reject, reimburse, or contact an employee. Any external or financially consequential action requires explicit human approval.
+
+> This synthetic policy demonstrates policy compilation, testing, impact analysis, and approval controls. It is not legal, tax, accounting, or production policy advice and is not copied from a specific company.

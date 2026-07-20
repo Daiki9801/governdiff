@@ -1,0 +1,190 @@
+{
+  "analysis": {
+    "policyId": "mfs-global-expense",
+    "version": "1.1.0",
+    "rules": [
+      {
+        "ruleId": "EXP-LDG-001",
+        "label": "High-value lodging review",
+        "condition": {
+          "kind": "all",
+          "conditions": [
+            {
+              "kind": "predicate",
+              "field": "category",
+              "operator": "eq",
+              "value": "lodging"
+            },
+            {
+              "kind": "predicate",
+              "field": "amount_usd",
+              "operator": "gt",
+              "value": 27500
+            }
+          ]
+        },
+        "outcome": "manager_review",
+        "sourceQuote": "Lodging expenses above USD 275.00 require manager review.",
+        "message": "Lodging amount requires manager review.",
+        "evidenceFields": [
+          "category",
+          "amount_usd"
+        ]
+      },
+      {
+        "ruleId": "EXP-RCT-001",
+        "label": "Receipt required at threshold",
+        "condition": {
+          "kind": "all",
+          "conditions": [
+            {
+              "kind": "predicate",
+              "field": "amount_usd",
+              "operator": "gte",
+              "value": 15000
+            },
+            {
+              "kind": "predicate",
+              "field": "receipt_attached",
+              "operator": "eq",
+              "value": false
+            }
+          ]
+        },
+        "outcome": "clarification",
+        "sourceQuote": "Expenses of USD 150.00 or more must include a receipt.",
+        "message": "A receipt is required at or above the policy threshold.",
+        "evidenceFields": [
+          "amount_usd",
+          "receipt_attached"
+        ]
+      },
+      {
+        "ruleId": "EXP-REQ-001",
+        "label": "Business purpose required",
+        "condition": {
+          "kind": "predicate",
+          "field": "business_purpose",
+          "operator": "missing",
+          "value": null
+        },
+        "outcome": "clarification",
+        "sourceQuote": "Every expense must include an expense date, business purpose, department code, and project code.",
+        "message": "Business purpose is required.",
+        "evidenceFields": [
+          "business_purpose"
+        ]
+      },
+      {
+        "ruleId": "EXP-REQ-002",
+        "label": "Department code required",
+        "condition": {
+          "kind": "predicate",
+          "field": "department_code",
+          "operator": "missing",
+          "value": null
+        },
+        "outcome": "clarification",
+        "sourceQuote": "Every expense must include an expense date, business purpose, department code, and project code.",
+        "message": "Department code is required.",
+        "evidenceFields": [
+          "department_code"
+        ]
+      },
+      {
+        "ruleId": "EXP-REQ-003",
+        "label": "Project code required",
+        "condition": {
+          "kind": "predicate",
+          "field": "project_code",
+          "operator": "missing",
+          "value": null
+        },
+        "outcome": "clarification",
+        "sourceQuote": "Every expense must include an expense date, business purpose, department code, and project code.",
+        "message": "Project code is required.",
+        "evidenceFields": [
+          "project_code"
+        ]
+      },
+      {
+        "ruleId": "EXP-RID-001",
+        "label": "High-value rideshare review",
+        "condition": {
+          "kind": "all",
+          "conditions": [
+            {
+              "kind": "predicate",
+              "field": "category",
+              "operator": "eq",
+              "value": "rideshare"
+            },
+            {
+              "kind": "predicate",
+              "field": "amount_usd",
+              "operator": "gt",
+              "value": 12000
+            },
+            {
+              "kind": "predicate",
+              "field": "manager_preapproved",
+              "operator": "eq",
+              "value": false
+            }
+          ]
+        },
+        "outcome": "manager_review",
+        "sourceQuote": "Rideshare expenses above USD 120.00 require manager review unless a manager preapproved the expense.",
+        "message": "Rideshare amount requires manager review unless preapproved.",
+        "evidenceFields": [
+          "category",
+          "amount_usd",
+          "manager_preapproved"
+        ]
+      },
+      {
+        "ruleId": "EXP-WKD-001",
+        "label": "Weekend justification required",
+        "condition": {
+          "kind": "all",
+          "conditions": [
+            {
+              "kind": "predicate",
+              "field": "is_weekend",
+              "operator": "eq",
+              "value": true
+            },
+            {
+              "kind": "predicate",
+              "field": "business_justification",
+              "operator": "missing",
+              "value": null
+            }
+          ]
+        },
+        "outcome": "clarification",
+        "sourceQuote": "Expenses incurred on a Saturday or Sunday require a written business justification.",
+        "message": "Weekend expense requires a business justification.",
+        "evidenceFields": [
+          "expense_date",
+          "is_weekend",
+          "business_justification"
+        ]
+      }
+    ],
+    "ambiguities": [],
+    "inputRequirements": [
+      {
+        "field": "expense_date",
+        "required": true,
+        "sourceQuote": "Every expense must include an expense date, business purpose, department code, and project code."
+      }
+    ],
+    "unsupportedStatements": []
+  },
+  "provenance": {
+    "capturedFrom": "gpt-5.4",
+    "capturedAt": "2026-07-19T02:25:37.414Z",
+    "requestId": "req_3ae02e62d76f44aa88925ed5ba0e5747"
+  }
+}

@@ -1,0 +1,49 @@
+expense_id,report_id,employee_id,expense_date,department_code,project_code,category,amount_usd,receipt_attached,business_purpose,business_justification,manager_preapproved,employee_email
+MFS-EXP-001,MFS-RPT-001,MFS-E001,2026-04-01,FIELD,PRJ-ALPHA,meal,99.99,false,Customer-site meal,,false,e001@example.invalid
+MFS-EXP-002,MFS-RPT-001,MFS-E001,2026-04-02,FIELD,PRJ-ALPHA,software,100.00,true,Diagnostic software,,false,e001@example.invalid
+MFS-EXP-003,MFS-RPT-001,MFS-E001,2026-04-03,FIELD,PRJ-ALPHA,other,100.01,true,Workshop materials,,false,e001@example.invalid
+MFS-EXP-004,MFS-RPT-001,MFS-E001,2026-04-06,FIELD,PRJ-ALPHA,meal,105.00,false,Customer workshop meal,,false,e001@example.invalid
+MFS-EXP-005,MFS-RPT-002,MFS-E002,2026-04-07,CDEL,PRJ-BRAVO,software,129.50,false,Temporary data tool,,false,e002@example.invalid
+MFS-EXP-006,MFS-RPT-002,MFS-E002,2026-04-08,CDEL,PRJ-BRAVO,other,149.99,false,On-site adapter kit,,false,e002@example.invalid
+MFS-EXP-007,MFS-RPT-002,MFS-E002,2026-04-09,CDEL,PRJ-BRAVO,meal,150.00,false,Customer training dinner,,false,e002@example.invalid
+MFS-EXP-008,MFS-RPT-002,MFS-E002,2026-04-10,CDEL,PRJ-BRAVO,software,150.01,false,Temporary monitoring license,,false,e002@example.invalid
+MFS-EXP-009,MFS-RPT-003,MFS-E003,2026-04-13,SALES,PRJ-CHARLIE,lodging,275.00,true,Customer visit lodging,,false,e003@example.invalid
+MFS-EXP-010,MFS-RPT-003,MFS-E003,2026-04-14,SALES,PRJ-CHARLIE,lodging,275.01,true,Customer visit lodging,,false,e003@example.invalid
+MFS-EXP-011,MFS-RPT-003,MFS-E003,2026-04-15,SALES,PRJ-CHARLIE,lodging,300.00,false,Conference lodging,,false,e003@example.invalid
+MFS-EXP-012,MFS-RPT-003,MFS-E003,2026-04-16,SALES,PRJ-CHARLIE,lodging,400.00,true,Emergency customer-site lodging,,false,e003@example.invalid
+MFS-EXP-013,MFS-RPT-004,MFS-E004,2026-04-20,FIELD,PRJ-DELTA,rideshare,120.00,true,Airport to customer site,,false,e004@example.invalid
+MFS-EXP-014,MFS-RPT-004,MFS-E004,2026-04-21,FIELD,PRJ-DELTA,rideshare,120.01,true,Customer site to regional office,,true,e004@example.invalid
+MFS-EXP-015,MFS-RPT-004,MFS-E004,2026-04-22,FIELD,PRJ-DELTA,rideshare,145.00,true,Late-night customer-site transfer,,false,e004@example.invalid
+MFS-EXP-016,MFS-RPT-004,MFS-E004,2026-04-11,FIELD,PRJ-DELTA,meal,65.00,true,Weekend cutover meal,Approved weekend cutover,false,e004@example.invalid
+MFS-EXP-017,MFS-RPT-005,MFS-E005,2026-05-17,CDEL,PRJ-ECHO,meal,72.00,true,Implementation meal,,false,e005@example.invalid
+MFS-EXP-018,MFS-RPT-005,MFS-E005,2026-06-14,CDEL,PRJ-ECHO,rideshare,80.00,true,Weekend support transfer,,false,e005@example.invalid
+MFS-EXP-019,MFS-RPT-005,MFS-E005,2026-05-18,CDEL,PRJ-ECHO,other,45.00,true,,,false,e005@example.invalid
+MFS-EXP-020,MFS-RPT-005,MFS-E005,2026-05-19,CDEL,PRJ-ECHO,software,60.00,true,   ,,false,e005@example.invalid
+MFS-EXP-021,MFS-RPT-006,MFS-E006,2026-05-20,,PRJ-FOXTROT,meal,55.00,true,Partner workshop meal,,false,e006@example.invalid
+MFS-EXP-022,MFS-RPT-006,MFS-E006,2026-05-21,ENG,,software,85.00,true,Temporary test utility,,false,e006@example.invalid
+MFS-EXP-023,MFS-RPT-006,MFS-E006,2026-05-22,ENG,,other,500.00,false,,,false,e006@example.invalid
+MFS-EXP-024,MFS-RPT-006,MFS-E006,2026-05-25,ENG,PRJ-FOXTROT,other,40.00,true,"=HYPERLINK(""https://example.invalid"",""demo"")",,false,e006@example.invalid
+MFS-EXP-025,MFS-RPT-007,MFS-E007,2026-05-26,FIELD,PRJ-GOLF,meal,32.50,true,Field briefing meal,,false,mfs-e007@example.invalid
+MFS-EXP-026,MFS-RPT-007,MFS-E007,2026-05-27,FIELD,PRJ-GOLF,rideshare,78.00,true,Hotel to customer site,,false,mfs-e007@example.invalid
+MFS-EXP-027,MFS-RPT-007,MFS-E007,2026-05-28,FIELD,PRJ-GOLF,lodging,210.00,true,Customer deployment lodging,,false,mfs-e007@example.invalid
+MFS-EXP-028,MFS-RPT-007,MFS-E007,2026-05-29,FIELD,PRJ-GOLF,software,49.00,true,Temporary diagnostic license,,false,mfs-e007@example.invalid
+MFS-EXP-029,MFS-RPT-008,MFS-E008,2026-06-01,SALES,PRJ-HOTEL,meal,48.00,true,Prospect meeting meal,,false,mfs-e008@example.invalid
+MFS-EXP-030,MFS-RPT-008,MFS-E008,2026-06-02,SALES,PRJ-HOTEL,other,62.00,true,Event materials,,false,mfs-e008@example.invalid
+MFS-EXP-031,MFS-RPT-008,MFS-E008,2026-06-03,SALES,PRJ-HOTEL,rideshare,95.00,true,Airport transfer,,false,mfs-e008@example.invalid
+MFS-EXP-032,MFS-RPT-008,MFS-E008,2026-06-04,SALES,PRJ-HOTEL,lodging,240.00,true,Partner event lodging,,false,mfs-e008@example.invalid
+MFS-EXP-033,MFS-RPT-009,MFS-E001,2026-06-05,FIELD,PRJ-INDIA,software,89.99,false,Device telemetry add-on,,false,mfs-e001@example.invalid
+MFS-EXP-034,MFS-RPT-009,MFS-E001,2026-06-06,FIELD,PRJ-INDIA,meal,54.00,true,Weekend incident meal,Emergency incident response,false,mfs-e001@example.invalid
+MFS-EXP-035,MFS-RPT-009,MFS-E001,2026-06-08,FIELD,PRJ-INDIA,other,74.00,true,Replacement cable kit,,false,mfs-e001@example.invalid
+MFS-EXP-036,MFS-RPT-009,MFS-E001,2026-06-09,FIELD,PRJ-INDIA,rideshare,118.00,true,Regional office transfer,,false,mfs-e001@example.invalid
+MFS-EXP-037,MFS-RPT-010,MFS-E002,2026-06-10,CDEL,PRJ-JULIET,meal,44.00,true,Customer training lunch,,false,mfs-e002@example.invalid
+MFS-EXP-038,MFS-RPT-010,MFS-E002,2026-06-11,CDEL,PRJ-JULIET,software,82.00,true,Training lab license,,false,mfs-e002@example.invalid
+MFS-EXP-039,MFS-RPT-010,MFS-E002,2026-06-12,CDEL,PRJ-JULIET,other,57.00,true,Workshop supplies,,false,mfs-e002@example.invalid
+MFS-EXP-040,MFS-RPT-010,MFS-E002,2026-06-13,CDEL,PRJ-JULIET,rideshare,110.00,true,Weekend customer transfer,Scheduled weekend workshop,false,mfs-e002@example.invalid
+MFS-EXP-041,MFS-RPT-011,MFS-E003,2026-06-15,SALES,PRJ-KILO,lodging,260.00,true,Regional customer visit lodging,,false,mfs-e003@example.invalid
+MFS-EXP-042,MFS-RPT-011,MFS-E003,2026-06-16,SALES,PRJ-KILO,meal,68.00,true,Customer meeting dinner,,false,mfs-e003@example.invalid
+MFS-EXP-043,MFS-RPT-011,MFS-E003,2026-06-17,SALES,PRJ-KILO,rideshare,121.00,true,Airport to hotel,,true,mfs-e003@example.invalid
+MFS-EXP-044,MFS-RPT-011,MFS-E003,2026-06-18,SALES,PRJ-KILO,software,96.00,true,Event lead scanner,,false,mfs-e003@example.invalid
+MFS-EXP-045,MFS-RPT-012,MFS-E004,2026-06-22,ENG,PRJ-LIMA,software,70.00,true,Test environment utility,,false,mfs-e004@example.invalid
+MFS-EXP-046,MFS-RPT-012,MFS-E004,2026-06-23,ENG,PRJ-LIMA,other,38.00,true,Prototype cable set,,false,mfs-e004@example.invalid
+MFS-EXP-047,MFS-RPT-012,MFS-E004,2026-06-24,ENG,PRJ-LIMA,meal,52.00,true,Design review meal,,false,mfs-e004@example.invalid
+MFS-EXP-048,MFS-RPT-012,MFS-E004,2026-06-30,ENG,PRJ-LIMA,lodging,199.00,true,Engineering workshop lodging,,false,mfs-e004@example.invalid

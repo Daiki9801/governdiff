@@ -1,0 +1,393 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "MFS-FINOPS-2026-01",
+  "policy_id": "mfs-global-expense",
+  "dataset_file": "MAVRENNA_EXPENSES_PUBLIC_DEMO.csv",
+  "dataset_sha256": "452acc27170249d64d26722dfb48158f8231987dd48bac9331e00dbcd210da8a",
+  "normalization_contract": "GOVERNDIFF_OPERATOR_SEMANTICS_v1_0_0.md",
+  "baseline_release": {
+    "display_version": "v1",
+    "release_version": "1.0.0",
+    "finding_count": 18,
+    "findings": [
+      {
+        "finding_key": "mfs-global-expense|EXP-LDG-001|MFS-EXP-010",
+        "rule_id": "EXP-LDG-001",
+        "record_ref": "MFS-EXP-010",
+        "outcome": "manager_review",
+        "observed": {
+          "category": "lodging",
+          "amount_usd": "275.01"
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-LDG-001|MFS-EXP-011",
+        "rule_id": "EXP-LDG-001",
+        "record_ref": "MFS-EXP-011",
+        "outcome": "manager_review",
+        "observed": {
+          "category": "lodging",
+          "amount_usd": "300.00"
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-LDG-001|MFS-EXP-012",
+        "rule_id": "EXP-LDG-001",
+        "record_ref": "MFS-EXP-012",
+        "outcome": "manager_review",
+        "observed": {
+          "category": "lodging",
+          "amount_usd": "400.00"
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-RCT-001|MFS-EXP-004",
+        "rule_id": "EXP-RCT-001",
+        "record_ref": "MFS-EXP-004",
+        "outcome": "clarification",
+        "observed": {
+          "amount_usd": "105.00",
+          "receipt_attached": false
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-RCT-001|MFS-EXP-005",
+        "rule_id": "EXP-RCT-001",
+        "record_ref": "MFS-EXP-005",
+        "outcome": "clarification",
+        "observed": {
+          "amount_usd": "129.50",
+          "receipt_attached": false
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-RCT-001|MFS-EXP-006",
+        "rule_id": "EXP-RCT-001",
+        "record_ref": "MFS-EXP-006",
+        "outcome": "clarification",
+        "observed": {
+          "amount_usd": "149.99",
+          "receipt_attached": false
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-RCT-001|MFS-EXP-007",
+        "rule_id": "EXP-RCT-001",
+        "record_ref": "MFS-EXP-007",
+        "outcome": "clarification",
+        "observed": {
+          "amount_usd": "150.00",
+          "receipt_attached": false
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-RCT-001|MFS-EXP-008",
+        "rule_id": "EXP-RCT-001",
+        "record_ref": "MFS-EXP-008",
+        "outcome": "clarification",
+        "observed": {
+          "amount_usd": "150.01",
+          "receipt_attached": false
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-RCT-001|MFS-EXP-011",
+        "rule_id": "EXP-RCT-001",
+        "record_ref": "MFS-EXP-011",
+        "outcome": "clarification",
+        "observed": {
+          "amount_usd": "300.00",
+          "receipt_attached": false
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-RCT-001|MFS-EXP-023",
+        "rule_id": "EXP-RCT-001",
+        "record_ref": "MFS-EXP-023",
+        "outcome": "clarification",
+        "observed": {
+          "amount_usd": "500.00",
+          "receipt_attached": false
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-REQ-001|MFS-EXP-019",
+        "rule_id": "EXP-REQ-001",
+        "record_ref": "MFS-EXP-019",
+        "outcome": "clarification",
+        "observed": {
+          "business_purpose": ""
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-REQ-001|MFS-EXP-020",
+        "rule_id": "EXP-REQ-001",
+        "record_ref": "MFS-EXP-020",
+        "outcome": "clarification",
+        "observed": {
+          "business_purpose": "   "
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-REQ-001|MFS-EXP-023",
+        "rule_id": "EXP-REQ-001",
+        "record_ref": "MFS-EXP-023",
+        "outcome": "clarification",
+        "observed": {
+          "business_purpose": ""
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-REQ-002|MFS-EXP-021",
+        "rule_id": "EXP-REQ-002",
+        "record_ref": "MFS-EXP-021",
+        "outcome": "clarification",
+        "observed": {
+          "department_code": ""
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-REQ-003|MFS-EXP-022",
+        "rule_id": "EXP-REQ-003",
+        "record_ref": "MFS-EXP-022",
+        "outcome": "clarification",
+        "observed": {
+          "project_code": ""
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-REQ-003|MFS-EXP-023",
+        "rule_id": "EXP-REQ-003",
+        "record_ref": "MFS-EXP-023",
+        "outcome": "clarification",
+        "observed": {
+          "project_code": ""
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-WKD-001|MFS-EXP-017",
+        "rule_id": "EXP-WKD-001",
+        "record_ref": "MFS-EXP-017",
+        "outcome": "clarification",
+        "observed": {
+          "expense_date": "2026-05-17",
+          "is_weekend": true,
+          "business_justification": ""
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-WKD-001|MFS-EXP-018",
+        "rule_id": "EXP-WKD-001",
+        "record_ref": "MFS-EXP-018",
+        "outcome": "clarification",
+        "observed": {
+          "expense_date": "2026-06-14",
+          "is_weekend": true,
+          "business_justification": ""
+        }
+      }
+    ]
+  },
+  "candidate_release": {
+    "display_version": "v2",
+    "release_version": "1.1.0",
+    "finding_count": 16,
+    "findings": [
+      {
+        "finding_key": "mfs-global-expense|EXP-LDG-001|MFS-EXP-010",
+        "rule_id": "EXP-LDG-001",
+        "record_ref": "MFS-EXP-010",
+        "outcome": "manager_review",
+        "observed": {
+          "category": "lodging",
+          "amount_usd": "275.01"
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-LDG-001|MFS-EXP-011",
+        "rule_id": "EXP-LDG-001",
+        "record_ref": "MFS-EXP-011",
+        "outcome": "manager_review",
+        "observed": {
+          "category": "lodging",
+          "amount_usd": "300.00"
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-LDG-001|MFS-EXP-012",
+        "rule_id": "EXP-LDG-001",
+        "record_ref": "MFS-EXP-012",
+        "outcome": "manager_review",
+        "observed": {
+          "category": "lodging",
+          "amount_usd": "400.00"
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-RCT-001|MFS-EXP-007",
+        "rule_id": "EXP-RCT-001",
+        "record_ref": "MFS-EXP-007",
+        "outcome": "clarification",
+        "observed": {
+          "amount_usd": "150.00",
+          "receipt_attached": false
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-RCT-001|MFS-EXP-008",
+        "rule_id": "EXP-RCT-001",
+        "record_ref": "MFS-EXP-008",
+        "outcome": "clarification",
+        "observed": {
+          "amount_usd": "150.01",
+          "receipt_attached": false
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-RCT-001|MFS-EXP-011",
+        "rule_id": "EXP-RCT-001",
+        "record_ref": "MFS-EXP-011",
+        "outcome": "clarification",
+        "observed": {
+          "amount_usd": "300.00",
+          "receipt_attached": false
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-RCT-001|MFS-EXP-023",
+        "rule_id": "EXP-RCT-001",
+        "record_ref": "MFS-EXP-023",
+        "outcome": "clarification",
+        "observed": {
+          "amount_usd": "500.00",
+          "receipt_attached": false
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-REQ-001|MFS-EXP-019",
+        "rule_id": "EXP-REQ-001",
+        "record_ref": "MFS-EXP-019",
+        "outcome": "clarification",
+        "observed": {
+          "business_purpose": ""
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-REQ-001|MFS-EXP-020",
+        "rule_id": "EXP-REQ-001",
+        "record_ref": "MFS-EXP-020",
+        "outcome": "clarification",
+        "observed": {
+          "business_purpose": "   "
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-REQ-001|MFS-EXP-023",
+        "rule_id": "EXP-REQ-001",
+        "record_ref": "MFS-EXP-023",
+        "outcome": "clarification",
+        "observed": {
+          "business_purpose": ""
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-REQ-002|MFS-EXP-021",
+        "rule_id": "EXP-REQ-002",
+        "record_ref": "MFS-EXP-021",
+        "outcome": "clarification",
+        "observed": {
+          "department_code": ""
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-REQ-003|MFS-EXP-022",
+        "rule_id": "EXP-REQ-003",
+        "record_ref": "MFS-EXP-022",
+        "outcome": "clarification",
+        "observed": {
+          "project_code": ""
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-REQ-003|MFS-EXP-023",
+        "rule_id": "EXP-REQ-003",
+        "record_ref": "MFS-EXP-023",
+        "outcome": "clarification",
+        "observed": {
+          "project_code": ""
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-RID-001|MFS-EXP-015",
+        "rule_id": "EXP-RID-001",
+        "record_ref": "MFS-EXP-015",
+        "outcome": "manager_review",
+        "observed": {
+          "category": "rideshare",
+          "amount_usd": "145.00",
+          "manager_preapproved": false
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-WKD-001|MFS-EXP-017",
+        "rule_id": "EXP-WKD-001",
+        "record_ref": "MFS-EXP-017",
+        "outcome": "clarification",
+        "observed": {
+          "expense_date": "2026-05-17",
+          "is_weekend": true,
+          "business_justification": ""
+        }
+      },
+      {
+        "finding_key": "mfs-global-expense|EXP-WKD-001|MFS-EXP-018",
+        "rule_id": "EXP-WKD-001",
+        "record_ref": "MFS-EXP-018",
+        "outcome": "clarification",
+        "observed": {
+          "expense_date": "2026-06-14",
+          "is_weekend": true,
+          "business_justification": ""
+        }
+      }
+    ]
+  },
+  "impact_preview": {
+    "removed_count": 3,
+    "added_count": 1,
+    "unchanged_count": 15,
+    "changed_count": 0,
+    "removed_finding_keys": [
+      "mfs-global-expense|EXP-RCT-001|MFS-EXP-004",
+      "mfs-global-expense|EXP-RCT-001|MFS-EXP-005",
+      "mfs-global-expense|EXP-RCT-001|MFS-EXP-006"
+    ],
+    "added_finding_keys": [
+      "mfs-global-expense|EXP-RID-001|MFS-EXP-015"
+    ],
+    "unchanged_finding_keys": [
+      "mfs-global-expense|EXP-LDG-001|MFS-EXP-010",
+      "mfs-global-expense|EXP-LDG-001|MFS-EXP-011",
+      "mfs-global-expense|EXP-LDG-001|MFS-EXP-012",
+      "mfs-global-expense|EXP-RCT-001|MFS-EXP-007",
+      "mfs-global-expense|EXP-RCT-001|MFS-EXP-008",
+      "mfs-global-expense|EXP-RCT-001|MFS-EXP-011",
+      "mfs-global-expense|EXP-RCT-001|MFS-EXP-023",
+      "mfs-global-expense|EXP-REQ-001|MFS-EXP-019",
+      "mfs-global-expense|EXP-REQ-001|MFS-EXP-020",
+      "mfs-global-expense|EXP-REQ-001|MFS-EXP-023",
+      "mfs-global-expense|EXP-REQ-002|MFS-EXP-021",
+      "mfs-global-expense|EXP-REQ-003|MFS-EXP-022",
+      "mfs-global-expense|EXP-REQ-003|MFS-EXP-023",
+      "mfs-global-expense|EXP-WKD-001|MFS-EXP-017",
+      "mfs-global-expense|EXP-WKD-001|MFS-EXP-018"
+    ],
+    "published_v1_approval": "ACTIVE_FOR_V1",
+    "candidate_v2_release_approval": "REQUIRED"
+  },
+  "notes": [
+    "Finding counts are counts of rule-record matches, not unique expense records.",
+    "The source CSV does not include is_weekend; the trusted input normalizer derives it from expense_date.",
+    "MFS-EXP-014 and MFS-EXP-043 are rideshare expenses above USD 120 but manager_preapproved=true, so they do not produce EXP-RID-001."
+  ]
+}

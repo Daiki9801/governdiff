@@ -1,0 +1,31 @@
+{
+  "title": "GovernDiff Codex Environment Machine Validation",
+  "version": "1.0.0",
+  "generated_at": "2026-07-18",
+  "passed": true,
+  "checks": {
+    "required_files_present": true,
+    "agents_under_150_lines": true,
+    "agents_under_32k_bytes": true,
+    "agents_states_not_technical_boundary": true,
+    "agents_no_add_dir": true,
+    "setup_no_workspace_yaml": true,
+    "setup_updates_handoff": true,
+    "launch_exact_flags": true,
+    "security_exact_delete_approval": true,
+    "security_no_full_access": true,
+    "security_no_encoded_powershell": true,
+    "security_stop_unexpected": true,
+    "security_incident_issues": true,
+    "markdown_fences_balanced": true,
+    "no_todo_tbd": true,
+    "specs_copied": true,
+    "demo_dataset_hash_matches": true
+  },
+  "metrics": {
+    "file_count": 24,
+    "agents_lines": 109,
+    "agents_bytes": 4840,
+    "markdown_files": 19
+  }
+}
