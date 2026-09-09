@@ -24,7 +24,7 @@
     "react-dom": "19.2.7",
     "openai": "6.47.0",
     "zod": "4.4.3",
-    "csv-parse": "7.0.1"
+    "csv-parse": "7.0.2"
   },
   "devDependencies": {
     "typescript": "5.9.3",
